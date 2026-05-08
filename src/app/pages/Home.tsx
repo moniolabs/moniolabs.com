@@ -14,7 +14,7 @@ import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 import { LightBeamDivider } from '../components/LightBeamDivider';
 import SoftAurora from '../components/SoftAurora';
-import rightVisualImg from '../../imports/image-136.png';
+import coinGif from '../../imports/coin.gif';
 import { handleContactClick } from '../utils/contact';
 
 export function Home() {
@@ -81,8 +81,8 @@ export function Home() {
               left: '780px' // 700px (text width) + 80px (gap)
             }}
           >
-            <ImageWithFallback
-              src="https://raw.githubusercontent.com/moniolabs/gif/main/coin.webp"
+            <img
+              src={coinGif}
               alt="Coin Visual"
               className="w-auto max-w-none object-contain object-left pointer-events-none origin-left"
               style={{
